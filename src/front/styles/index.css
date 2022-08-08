@@ -1,3 +1,31 @@
 /* 
     General Styles used on every website (Don't Repeat Yourself)
 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  @import url("https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur");
+  
+  body {
+    background-image: linear-gradient(-225deg, #8BB1A2 0%, #DFE1C7  100%);
+    background-image: linear-gradient(to top,  #DFE1C7 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: "Vibur", cursive;
+    font-family: "Abel", sans-serif;
+    opacity: 0.95;
+  }
+  
+  
+  .titulo {
+    margin: 2% auto 10% auto;
+    text-align: center;
+    font-size: 250%;
+    font-family: "Playfair Display", serif;
+    color: #3e403f;
+  }
+
+  

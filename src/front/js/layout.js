@@ -9,6 +9,11 @@ import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import { Page_login } from "./pages/login";
+import { Page_register } from "./pages/register";
+import { Page_profile } from "./pages/profile";
+
+
 
 //create your first component
 const Layout = () => {
@@ -24,9 +29,12 @@ const Layout = () => {
                     <Routes>
                         <Route element={<Home />} path="/" />
                         <Route element={<Demo />} path="/demo" />
+                        <Route element={<Page_register />} path="/register" />
+                        <Route element={<Page_login />} path="/login" />
+                        <Route element={<Page_profile />} path="/profile" />
                         <Route element={<Single />} path="/single/:theid" />
                         <Route element={<h1>Not found!</h1>} />
-                    </Routes>
+                    </Routes> 
                     <Footer />
                 </ScrollToTop>
             </BrowserRouter>
@@ -35,3 +43,4 @@ const Layout = () => {
 };
 
 export default injectContext(Layout);
+
